@@ -1,7 +1,7 @@
 
 async function getNewImage() {
  let randomNumber = Math.floor(Math.random() * 10);
- fetch(`https://api.unsplash.com/search/photos?query=blog&client_id=A2fLdC0qwDbvZWtxWxeJyFv-Z-CuTXRHphMAXHWeOeg`)
+ fetch(`https://api.unsplash.com/search/photos?query=blog&client_id={insert api key here}`)
   .then( response => response.json())
   .then( data => {
     const endpoint = data.results[randomNumber].urls.regular;
